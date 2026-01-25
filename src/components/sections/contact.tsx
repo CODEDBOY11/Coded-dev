@@ -68,7 +68,7 @@ const Contact = () => {
             <div className="border border-white/10 rounded-2xl p-8">
               <p className="text-sm text-white/40 mb-2">Email</p>
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:akoredef2008@gmail.com"
                 className="text-lg font-medium hover:text-accent"
               >
                 akoredef2008@gmail.com
