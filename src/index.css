@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  text-decoration: none !important;
+}
+body {
+  background-color: #000 !important;
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.04),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(255, 255, 255, 0.03),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(255, 255, 255, 0.02),
+      transparent 50%
+    );
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+/* ================================
+   GLOBAL RESPONSIVE SYSTEM
+   CODED_DEV — Professional Scale
+   ================================ */
+
+/* Root scaling */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+/* =================================
+   GLOBAL SPACING NORMALIZATION
+   ================================= */
+
+section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* =================================
+   TYPOGRAPHY SCALING
+   ================================= */
+
+h1 {
+  line-height: 1.1;
+}
+
+h2 {
+  line-height: 1.15;
+}
+
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =================================
+   GRID SYSTEM ADAPTATION
+   ================================= */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =================================
+   PROJECT CARDS / SERVICE CARDS
+   ================================= */
+
+@media (max-width: 768px) {
+  .project-card,
+  .service-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+}
+
+/* =================================
+   HERO SECTION FIXES
+   ================================= */
+
+@media (max-width: 768px) {
+  .hero-container {
+    min-height: 90vh;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+/* =================================
+   NAVIGATION
+   ================================= */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.25rem;
+  }
+}
+
+/* =================================
+   FOOTER
+   ================================= */
+
+@media (max-width: 768px) {
+  footer {
+    text-align: left;
+  }
+
+  footer .grid {
+    gap: 3rem;
+  }
+}
+
+/* =================================
+   GLOBAL TOUCH OPTIMIZATION
+   ================================= */
+
+button,
+a {
+  min-height: 44px; /* mobile touch standard */
+}
+
+/* =================================
+   SCROLL + OVERFLOW SAFETY
+   ================================= */
+
+body {
+  overflow-x: hidden;
+}
+
+/* =================================
+   GRID BACKGROUND RESPONSIVENESS
+   ================================= */
+
+@media (max-width: 768px) {
+  .bg-grid {
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 480px) {
+  .bg-grid {
+    opacity: 0.15;
+  }
+}
+/* ================================
+   MOBILE TYPOGRAPHY EMPHASIS
+   ================================ */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(3rem, 9vw, 3.8rem);
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-size: clamp(2.4rem, 7vw, 3.2rem);
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+/* ================================
+   MOBILE SECTION RHYTHM
+   ================================ */
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  section:first-of-type {
+    padding-top: 9rem;
+  }
+}
+/* ================================
+   MOBILE VISUAL DEPTH
+   ================================ */
+
+@media (max-width: 768px) {
+  .card,
+  .project-card,
+  .service-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+/* ================================
+   MOBILE IMAGE EMPHASIS
+   ================================ */
+
+@media (max-width: 768px) {
+  .about-images img {
+    border-radius: 1.25rem;
+  }
+
+  .about-images {
+    margin-top: 4rem;
+  }
+}
+/* ================================
+   MOBILE HERO PRESENCE
+   ================================ */
+
+@media (max-width: 768px) {
+  .hero-container {
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .hero-container h1 {
+    margin-bottom: 2rem;
+  }
+}
