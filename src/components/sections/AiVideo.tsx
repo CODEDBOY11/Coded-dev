@@ -29,14 +29,6 @@ const workflow = [
   "Final Rendering",
 ];
 
-const stack = [
-  "Runway ML",
-  "Pika Labs",
-  "Stable Diffusion",
-  "After Effects",
-  "Premiere Pro",
-  "ElevenLabs",
-];
 const previews = [
   {
     thumbnail: "vid1thumbnail.png",
