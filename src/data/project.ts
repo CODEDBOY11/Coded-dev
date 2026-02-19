@@ -17,20 +17,6 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
-    title: "SaaS Management Platform",
-    type: "Full Stack",
-    tagline: "Multi-tenant platform for growing businesses",
-    description:
-      "Designed and built a production-ready SaaS system with authentication, role-based access, dashboards, and REST APIs.",
-    image: "/images/project-saas.png",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
-    impact:
-      "Architected for scalability and maintainability, supporting long-term feature growth.",
-  },
-
-  {
     title: "API Integration System",
     type: "API Integration",
     tagline: "Secure third-party API integration",

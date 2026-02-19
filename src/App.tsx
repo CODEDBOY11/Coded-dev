@@ -7,14 +7,17 @@ import Principles from "./components/sections/Principles";
 import About from "./components/sections/About";
 import Footer from "./components/layout/footer";
 import AppLayout from "./components/layout/AppLayout";
+import AiVideo from "./components/sections/AiVideo";
 
 const App = () => {
   return (
     <AppLayout>
       <Navbar />
       <Hero />
+
       <Projects />
       <Services />
+      <AiVideo />
       <Principles />
       <Contact />
       <About />

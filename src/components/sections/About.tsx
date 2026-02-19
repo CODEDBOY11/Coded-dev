@@ -81,7 +81,7 @@ const About = () => {
                 {/* Secondary images */}
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="/setup.png"
+                    src="/working-setup.jpg"
                     alt="Working setup"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
                   />
@@ -89,7 +89,7 @@ const About = () => {
 
                 <div className="overflow-hidden rounded-2xl">
                   <img
-                    src="/about-im.png"
+                    src="/detail-shot.png"
                     alt="Detail shot"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
                   />

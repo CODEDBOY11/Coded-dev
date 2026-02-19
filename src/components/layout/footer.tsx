@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/CODEDBOY11"
                   target="_blank"
                   className="hover:text-white transition"
                 >
